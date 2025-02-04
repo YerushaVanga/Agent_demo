@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breadwinner Agent Chat</title>
     <style>
-        /* Shining Background */
+        /* Background with soft gradient */
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #FFDD94, #FFD580, #FFC36F, #FFA64D); /* Shiny orange gradient */
+            background: linear-gradient(135deg, #A18CD1, #FBC2EB);
             background-size: 400% 400%;
-            animation: gradientAnimation 10s infinite alternate;
+            animation: gradientAnimation 5s infinite alternate;
             color: #333;
             text-align: center;
             margin: 0;
@@ -24,7 +24,7 @@
 
         /* Glowing Header */
         .header {
-            background: linear-gradient(90deg, #FFAA33, #FF8800);
+            background: linear-gradient(90deg, #8A2BE2, #6A5ACD);
             padding: 20px;
             font-size: 26px;
             font-weight: bold;
@@ -34,9 +34,8 @@
             top: 0;
             left: 0;
             text-align: center;
-            box-shadow: 0px 4px 15px rgba(255, 136, 0, 0.7);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
+            box-shadow: 0px 4px 15px rgba(138, 43, 226, 0.8);
+            letter-spacing: 1.2px;
         }
 
         .container {
@@ -46,54 +45,45 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            padding-top: 100px; /* Avoid header overlap */
+            padding-top: 80px;
         }
 
         /* Chatbot Box */
         .chatbot-container {
-            width: 350px;
+            width: 400px;
             background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(138, 43, 226, 0.5);
             margin-top: 20px;
-            border: 3px solid #FF8800; /* Orange border */
+            border: 3px solid #7B68EE;
         }
 
-        /* Shining Chatbot Message */
+        /* Chatbot Message */
         .chatbot-message {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
             text-align: center;
-            background: linear-gradient(45deg, #FFAA33, #FF8800);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: glowingText 1.5s infinite alternate;
+            color: #4B0082;
             padding: 10px;
         }
 
-        @keyframes glowingText {
-            0% { opacity: 0.7; }
-            100% { opacity: 1; }
-        }
-
-        /* Encouragement with Colors */
+        /* Encouragement Message */
         .encouragement {
-            font-size: 16px;
-            color: #2C3E50;
-            margin-top: 10px;
+            font-size: 18px;
+            color: #483D8B;
+            margin-top: 15px;
             font-weight: bold;
-            background: linear-gradient(90deg, #FF8800, #FF5500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Glowing Header at the Top -->
+    <!-- Glowing Header -->
     <div class="header">
-        Welcome to Breadwinner Agent 🚀
+        ✨ Welcome to Breadwinner Agent 🚀
     </div>
 
     <div class="container">
@@ -104,8 +94,8 @@
             </div>
 
             <div class="encouragement">
-                💡 Our Intelligent Bot is Here to Help You! 🚀 <br>  
-                💬 Ask anything and get instant responses! 🎯  
+                💡 Our Intelligent Bot is Here to Help You! 🚀<br>
+                💬 Ask anything and get instant responses! 🎯
             </div>
         </div>
     </div>
