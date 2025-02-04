@@ -7,34 +7,98 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://source.unsplash.com/1600x900/?technology,chat') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(135deg, #003366, #0099cc); /* Gradient Blue Theme */
             color: white;
             text-align: center;
-            padding-top: 100px;
+            margin: 0;
+            padding: 0;
         }
+
+        .header {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
         .container {
-            background: rgba(0, 0, 0, 0.7);
+            margin-top: 100px;
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
             display: inline-block;
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
         }
+
         h1 {
             font-size: 28px;
             margin-bottom: 10px;
         }
+
         p {
             font-size: 18px;
-            color: #ddd;
+            color: #eee;
+        }
+
+        /* Bot Styling */
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #fff;
+            color: #003366;
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+        }
+
+        .chatbot img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .chatbot p {
+            margin: 0;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Header with Breadwinner Icon -->
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg" alt="Breadwinner Logo">
+        Welcome to Breadwinner Agent
+    </div>
+
+    <!-- Centered Chat Message -->
     <div class="container">
-        <h1>Welcome to Breadwinner Agent Support</h1>
-        <p>Our intelligent bot is here to assist you. Feel free to ask any questions.</p>
+        <h1>Our Intelligent Bot is Here to Assist You!</h1>
+        <p>Ask any questions and get instant support.</p>
+    </div>
+
+    <!-- Chatbot Interface -->
+    <div class="chatbot">
+        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Chatbot Icon">
+        <p>Hi there! How can I help you today?</p>
     </div>
 
     <script type='text/javascript'>
