@@ -113,6 +113,10 @@
                         scrt2URL: 'https://orgfarm-904482eeba-dev-ed.develop.my.salesforce-scrt.com'
                     }
                 );
+                 //Set invisible prechat field
+                    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+                        "sf_org_id" : "00011122200044"
+                    });
             } catch (err) {
                 console.error('Error loading Embedded Messaging: ', err);
             }
