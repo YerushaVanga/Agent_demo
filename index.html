@@ -7,25 +7,40 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #003366, #0099cc); /* Gradient Blue Theme */
-            color: white;
+            background: #f7f3e9; /* Light Beige Background */
+            color: #333;
             text-align: center;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .chatbot-container {
+            width: 320px; /* Same width as bot */
+            text-align: left;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
         }
 
         .header {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 15px;
             font-size: 24px;
             font-weight: bold;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 10;
+            color: #444;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 10px;
         }
 
         .header img {
@@ -34,36 +49,7 @@
             margin-right: 10px;
         }
 
-        .container {
-            margin-top: 100px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-        }
-
-        h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 18px;
-            color: #eee;
-        }
-
-        /* Bot Styling */
         .chatbot {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #fff;
-            color: #003366;
-            padding: 15px;
-            border-radius: 10px;
-            width: 300px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
             display: flex;
             align-items: center;
         }
@@ -78,33 +64,43 @@
         .chatbot p {
             margin: 0;
             font-size: 16px;
+            color: #333;
+        }
+
+        .encouragement {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header with Breadwinner Icon -->
-    <div class="header">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg" alt="Breadwinner Logo">
-        Welcome to Breadwinner Agent
-    </div>
-
-    <!-- Centered Chat Message -->
     <div class="container">
-        <h1>Our Intelligent Bot is Here to Assist You!</h1>
-        <p>Ask any questions and get instant support.</p>
-    </div>
+        <!-- Header with Breadwinner Icon -->
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg" alt="Breadwinner Logo">
+            Welcome to Breadwinner Agent
+        </div>
 
-    <!-- Chatbot Interface -->
-    <div class="chatbot">
-        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Chatbot Icon">
-        <p>Hi there! How can I help you today?</p>
+        <!-- Chatbot Section -->
+        <div class="chatbot-container">
+            <div class="chatbot">
+                <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="Chatbot Icon">
+                <p>Hi there! How can I assist you today? 😊</p>
+            </div>
+
+            <div class="encouragement">
+                💡 Our Intelligent Bot is Here to Help You! 🚀 <br>  
+                💬 Ask anything and get instant responses!  
+            </div>
+        </div>
     </div>
 
     <script type='text/javascript'>
         function initEmbeddedMessaging() {
             try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; // Set language
+                embeddedservice_bootstrap.settings.language = 'en_US'; 
 
                 embeddedservice_bootstrap.init(
                     '00DGB000003ZTr1',
