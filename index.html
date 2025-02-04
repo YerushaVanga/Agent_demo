@@ -6,7 +6,24 @@
     <title>My Website</title>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Website!</h1>
-    <p>This is a simple website hosted on GitHub Pages.</p>
+   <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DGB000003ZTr1',
+				'Messaging_Service_Deployment',
+				'https://orgfarm-904482eeba-dev-ed.develop.my.site.com/ESWMessagingServiceDepl1738667491149',
+				{
+					scrt2URL: 'https://orgfarm-904482eeba-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-904482eeba-dev-ed.develop.my.site.com/ESWMessagingServiceDepl1738667491149/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
